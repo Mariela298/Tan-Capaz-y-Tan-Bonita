@@ -1,0 +1,727 @@
+:root{
+	--red:#ff2e63;
+	--black:#252a34;
+	--blue:#00d9d6;
+	--white:#eaeaea;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+	background: #fff;
+	background-repeat: no-repeat;
+	font-family: 'Tenali Ramakrishna';
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+     margin: 0;
+
+
+	
+
+
+}
+/**Menu de navegacion**/
+.enca{
+	background: rgba(123,98,50,0.2);
+	overflow: hidden;
+	width: 100%;
+	margin-bottom:20px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	position: fixed;
+}
+.wrapper{
+	width: 90%;
+	max-width: 1180PX;
+	margin: auto;
+	overflow: hidden;
+}
+
+.logo{
+	color: #fff;
+	font-size: 20px;
+	font-family: Berlin sans FB;
+	line-height: 70px;
+	float: left;
+}
+nav{
+	line-height: 70px;
+	float: right;
+}
+nav a{
+	color: #fff;
+    display:inline-block;
+    text-decoration: none;
+    font-family: arial narrow;
+    font-weight: bold;
+    padding: 20px 10px;
+    line-height: normal;
+    font-size: 16px;
+    -webkit-transition:all 500ms ease;
+    transition: all 500ms ease;
+}
+nav a:hover{
+	color: #33cccc;
+	border-bottom: 5px solod #33cccc;
+}
+@media only screen and (min-width: 400px;) and (max-width: 767px){
+	.enca{
+		height: 70px;
+	}
+	.logo{
+		font-size: 30px;
+		margin-left: 130px;
+		margin-top: -15px;
+	}
+	nav{
+		margin-top: -40px;
+		transform: translateX(-3%);
+	}
+}
+
+
+
+
+
+/**termina nuevo menu**/
+.navegacion{
+	width: 1000px;
+	margin-top: 2px;
+	background: aqua;
+	height: 10px;
+
+
+}
+.navegacion ul{
+	list-style: none;
+}
+.list>li{
+	/**position: relative**/
+   display: inline-grid;
+}
+.list>li>a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Tenali Ramakrishna';
+    text-decoration: none;
+}
+.list li a:hover{
+	color: #00d9d6;
+	transition: all.3s;
+
+}
+/**imagen banner**/
+.hero-image{
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(inicio3.png);
+	background-size: cover;
+
+}
+.container{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+.container h1{
+	font-size: 60px;
+	letter-spacing: 0.2em;
+	margin: 0;
+
+}
+.container h1 span{
+	border:10px solid white;
+	padding: 6px 14px;
+	display: inline-block;
+}
+.des{
+	margin:20px;
+	display: block;
+	font-size: 26px;
+	text-shadow: 0 0 10px black;
+
+}
+.btn{
+	color: #313131;
+	padding: 10px 24px;
+	font-size: 20px;
+	text-decoration: none;
+	background: #f1f1f1;
+	border-radius: 8px;
+	transition: 0.3s all;
+
+}
+
+
+/* Follow */
+.social {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  z-index: 2000;
+}
+.social ul{
+  list-style: none;
+}
+.social ul li a{
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition:all 500ms ease;
+  -0-transition:all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.social ul li a:hover{
+  padding: 10px 30px;
+  background: #000;
+}
+
+
+
+
+h1{
+	text-align: center;
+	font-size: 90px;
+	font-family: cordia new;
+	margin-top: 80px;
+	color: pink;
+	text-shadow: 0px 0px 2px black;
+}
+h2{
+	text-align: center;
+	font-size: 90px;
+	font-family: Baskerville Old Face;
+	margin-top: 10px;
+	color: black;
+	text-shadow: 0px 0px 2px pink;
+}
+p {
+	text-align: center;
+	font-size: 20px;
+	font-family: Khmer UI;
+	margin-top: 20px;
+	color: black;
+	cursor: pointer;
+}
+h3{
+	text-align: center;
+	font-size: 35px;
+	font-family:Bodoni MT;
+	margin-top:0;
+	color:black;
+	margin-bottom: 20px;
+}
+
+h4{
+	text-align: center;
+	font-size: 15px;
+	font-family:Bodoni MT;
+	margin-top:0;
+	color:black;
+	margin-bottom:20px;
+}
+
+h6{
+	text-align: center;
+	font-family: Lucida Handwriting;
+	font-size: 20px;
+	color: black;
+
+}
+/**galeria 1**/
+.contenedor-imagenes{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000%;
+	margin: auto;
+	background: #c0c0c0;
+}
+
+.galeria-img{
+
+	width: 400px;
+	height: 300px;
+	margin-bottom: 30px;
+	object-fit: fill;
+	filter: brightness(70%);
+	cursor: pointer;
+	animation: escalar 1.5s infinite alternate;
+
+}
+@keyframes escalar{
+	to{
+		transform:scale(1); 
+	}
+	from{
+		transform: scale(1.05);
+	}
+}
+.galeria-img:hover{
+	filter: brightness(100%);
+}
+/**galeria 2**/
+.gale{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000%;
+	margin: auto;
+}
+
+.galeria{
+
+	width: 400px;
+	height: 300px;
+	margin-bottom: 30px;
+	object-fit: fill;
+	filter: brightness(70%);
+	cursor: pointer;
+	animation: escalar 1.5s infinite alternate;
+
+}
+@keyframes escalar{
+	to{
+		transform:scale(1); 
+	}
+	from{
+		transform: scale(1.05);
+	}
+}
+.galeria:hover{
+	filter: brightness(100%);
+}
+
+
+/**mujeres que rompieron estereotipos**/
+
+.testiminials{
+	padding: 20px 0;
+	background-size: 100vw 100vh;
+	color: #434343;
+	text-align: center;
+	background: #c0c0c0;
+}
+.inner{
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 10px;
+}
+.border{
+	width: 600px;
+	height: 8px;
+	background: pink;
+	margin: 26px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+	flex: 33.33%
+	max-width:33.33%;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+.testiminial{
+	background: #fff;ss
+	padding: 60px;
+	border: 5px solid pink ;
+}
+.testiminial img{
+	width: 200px;
+	height: 200px;
+	border-radius: 30px;
+
+}
+.name{
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+@media screen and (max-width:600px){
+	.col{
+		flex: 100%;
+		max-width: 100%
+	}
+
+}
+
+
+/* Follow */
+.social{
+margin: 30px;
+
+}
+.media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media a{
+  margin: 0 30px;
+}
+.media a i{
+	font-size: 5rem;
+}
+//**formulario**//
+.footer{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: 200px;
+	background:black;
+}
+.main-content{
+	display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.125rem;
+	text-transform: uppercase;
+ 
+
+}
+
+
+}
+.box .content{
+	margin: 20px 0 0 0;
+
+
+}
+
+.left .content p{
+	text-align: justify;
+}
+.left .contenidos .social{
+	margin: 20px 0 0 0;
+}
+.left .content .social a{
+	padding: 0 2px;
+}
+
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: aqua;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.left .content .social a span:hover{
+	background: aqua;
+
+}
+
+
+
+
+
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	background: : #fff;
+}
+.right form .msg{
+	margin-top: 10px;
+
+}
+.right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0626rem;
+	background: #c0c0c0;
+	padding-left: 10px;
+	border: 1px solid aqua;
+}
+.right form input:focus,
+.right form input:focus{
+	outline-color: #3498db;
+}
+
+.right form input{
+   height: 35px;
+}
+.right form .btn{
+	margin-top: 10px;
+}
+.right form .btn button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: #32CCBC;
+	font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+p {
+	text-align: center;
+	font-size: 20px;
+	font-family: Khmer UI;
+	margin-top: 0px;
+	color: black;
+	cursor: pointer;
+}
+
+
+h6{
+	text-align: center;
+	font-family: Lucida Handwriting;
+	font-size: 40px;
+	color: black;
+    margin-top: 0;
+    margin: 0;
+}
+
+
+
+/**footer**/
+
+.footer.footer-text{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,0.8);
+	border-top: 5px solid #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
